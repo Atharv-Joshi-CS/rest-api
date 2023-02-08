@@ -1,5 +1,5 @@
 const Products = require("../../data/products.json");
-const Product = require("../models/product.models")
+const { Product } = require("../models/product.models")
 const { findIndexofProduct } = require("../utilities/utility_functions");
 
 const getProducts = (req, res) => {
@@ -19,9 +19,9 @@ const getProductFromId = (req, res) => {
 }
 
 const createProduct = (req, res) => {
-    const prod = Product(req.body);
-    Products.push(prod);
-    res.status(200).send(prod);
+    const product = new Product(req.body);
+    Products.push(product);
+    res.status(200).send(product);
 }
 
 const deleteProduct = (req, res) => {
