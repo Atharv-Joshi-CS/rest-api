@@ -57,7 +57,7 @@ Response body : Newly Created Product Object
 #### 4. Delete Product :
 Url : `http://localhost:3000/products/:id`
 
-HTTP METHOD : GET
+HTTP METHOD : DELETE
 
 ##### Successfull Request :
 
@@ -74,7 +74,7 @@ Response body : EMPTY
 #### 5. Product Product :
 Url : `http://localhost:3000/products/:id`
 
-HTTP METHOD : GET
+HTTP METHOD : PATCH
 
 ##### Successfull Request :
 
