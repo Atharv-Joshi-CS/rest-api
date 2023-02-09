@@ -1,6 +1,10 @@
 const express = require("express");
 
 const {
+    validateProductSchema
+} = require("../middlewares/product.middlewares");
+
+const {
     getProducts,
     getProductFromId,
     createProduct,
@@ -12,7 +16,7 @@ const productRouter = express.Router();
 
 productRouter.route("")
 .get(getProducts)
-.post(createProduct);
+.post(validateProductSchema, createProduct);
 
 productRouter.route("/:id")
 .get(getProductFromId)
