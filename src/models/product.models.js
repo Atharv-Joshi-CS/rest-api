@@ -6,5 +6,4 @@ function Product(data){
     this.price = data.price;
 }
 
-
 module.exports = {Product};

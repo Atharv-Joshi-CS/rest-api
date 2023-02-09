@@ -1,6 +1,4 @@
-const Products = require("../../data/products.json");
-
-function findIndexofProduct(id){
+function findIndexofProduct(id, Products){
     const index = Products.findIndex(product => product.id === id)
     return index;
   }
