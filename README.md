@@ -49,14 +49,14 @@ Url : `http://localhost:3000/products`
 HTTP METHOD : POST
 
 Request Body Template :
-
+```
 {
 "title" : "Brown Sneakers",
 "category" : "Shoes",
 "imagepath" : "public/images/brown_shoes.png",
 "price" : "500"
 }
-
+```
 ##### Successfull Request :
 
 Status code : 200
