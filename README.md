@@ -8,8 +8,8 @@ The aim of this exercise is to develop a well structured API which is able to pe
 1. Setup the repository in your local system.
 2. Make sure you have node and npm installed.
 3. After completing the above two steps run the following command to download all dependencies. `npm install`
-4. Start the server using the following command. `node src/app.js`
-5. If nodemon is installed globally, server can be started in development mode using `nodemon src/app.js`
+4. Start the server using the following command. `npm run start`
+5. If nodemon is installed globally, server can be started in development mode using `npm run dev`
 6. Command to install nodemon globally : `npm i -g nodemon`
 7. The server will be running on `http://localhost:3000`
 
