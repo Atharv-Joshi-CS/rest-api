@@ -51,6 +51,7 @@ HTTP METHOD : POST
 Request Body Template :
 ```
 {
+"id" : "333",
 "title" : "Brown Sneakers",
 "category" : "Shoes",
 "imagepath" : "public/images/brown_shoes.png",
@@ -62,6 +63,12 @@ Request Body Template :
 Status code : 200
 
 Response body : Newly Created Product Object
+
+##### Unsuccessfull Request :
+
+Status code : 422
+
+Response body : EMPTY
 
 #### 4. Delete Product :
 Url : `http://localhost:3000/products/:id`
